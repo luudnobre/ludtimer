@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    background: linear-gradient(to bottom, #450a63, #000000);
+    background: linear-gradient(to bottom, #37084e, #1e0707);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,15 +9,15 @@ body {
     margin: 0;
     color: #ffffff;
     font-family: 'Fira Code', monospace;
-    padding: 20px;
+    padding: 10px;
 }
 
 #github-button {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 12px 20px;
+    padding: 12px 10px;
     background: linear-gradient(145deg, #8a2be2, #4b0082);
     border-radius: 12px;
     box-shadow: 0px 5px 15px rgba(138, 43, 226, 0.7);
@@ -42,32 +42,32 @@ body {
 #timer-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    border: 2px solid rgb(87, 86, 142);
-    padding: 30px;
+    align-items: normal;
+    position: static;
+    border: 0px solid rgb(87, 86, 142);
+    padding: 0px;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.5);
-    max-width: 400px;
-    width: 100%;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+    max-width: 300px;
+    width: 200%;
     text-align: center;
 }
 
 #apple-emoji {
-    font-size: 2.5em;
-    cursor: pointer;
-    margin-bottom: 20px;
+    font-size: 2.0em;
+    cursor: default;
+    margin-bottom: 10px;
 }
 
 #timer {
-    font-size: 3em;
+    font-size: 4em;
     color: #c4cf27;
-    text-shadow: 0 0 10px #f39c12;
+    text-shadow: 0 0 20px #f39c12;
 }
 
 button {
-    padding: 15px;
+    padding: 10px;
     background: linear-gradient(145deg, #6b29a3, #450a63);
     color: white;
     font-weight: bold;
@@ -75,15 +75,15 @@ button {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0px 5px 15px rgba(255, 0, 255, 0.5);
-    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+    margin: 15px;
     width: 100%;
-    max-width: 200px;
+    max-width: 120px;
 }
 
 button:hover {
     background: linear-gradient(145deg, #942dc7, #6b29a3);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #controls {
@@ -116,13 +116,13 @@ button:hover {
 
 #missions-panel {
     width: 100%;
-    max-width: 400px;
-    background: #8276b2;
+    max-width: 259px;
+    background: #f8f7ff;
     border-radius: 15px;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 15px rgba(205, 182, 182, 0.5);
 }
 
 #missions-panel h3 {
@@ -132,7 +132,7 @@ button:hover {
 }
 
 #missions-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: start;
 }
@@ -140,7 +140,7 @@ button:hover {
 .mission {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 253, 253, 0.1);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -160,8 +160,8 @@ button:hover {
 
 #missions-panel {
     width: 100%;
-    max-width: 400px;
-    background: #302850;
+    max-width: 300;
+    background: #560969;
     border-radius: 15px;
     padding: 20px;
     margin-top: 20px;
@@ -177,12 +177,12 @@ button:hover {
 
 #missionInput {
     width: calc(100% - 20px);
-    padding: 8px;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
     outline: none;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 #missions-container {
@@ -205,7 +205,7 @@ button:hover {
 }
 
 .mission input {
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .mission label {
@@ -221,12 +221,12 @@ button:hover {
 }
 
 .mission button {
-    background: rgb(249, 247, 247);
+    background: rgb(255, 255, 255);
     border: none;
     color: white;
     padding: 10px 1%;
     border-radius: 0px;
-    cursor: no-drop;
+    cursor: none;
 }
 
 
