@@ -1,0 +1,252 @@
+/* styles.css */
+body {
+    background: linear-gradient(to bottom, #450a63, #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Fira Code', monospace;
+    padding: 20px;
+}
+
+#github-button {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    background: linear-gradient(145deg, #8a2be2, #4b0082);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(138, 43, 226, 0.7);
+    transition: all 0.3s;
+    text-align: center;
+}
+
+#github-button a {
+    color: rgb(255, 255, 255);
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+}
+
+#github-button:hover {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0px 10px 25px rgba(238, 237, 239, 0.9);
+}
+
+
+#timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 2px solid rgb(87, 86, 142);
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#apple-emoji {
+    font-size: 2.5em;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 3em;
+    color: #c4cf27;
+    text-shadow: 0 0 10px #f39c12;
+}
+
+button {
+    padding: 15px;
+    background: linear-gradient(145deg, #6b29a3, #450a63);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 15px rgba(255, 0, 255, 0.5);
+    margin: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #942dc7, #6b29a3);
+    transform: scale(1.1);
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#instruction-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) perspective(800px) rotateY(5deg);
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    display: none;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.7);
+    max-width: 300px;
+}
+
+#close-popup {
+    background: rgb(128, 5, 165);
+    margin-top: 10px;
+}
+
+#missions-panel {
+    width: 100%;
+    max-width: 400px;
+    background: #8276b2;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#missions-panel h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 10px cyan;
+}
+
+#missions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.mission {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.mission input {
+    margin-right: 10px;
+}
+
+.mission label {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#missions-panel {
+    width: 100%;
+    max-width: 400px;
+    background: #302850;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(225, 115, 240, 0.5);
+}
+
+#missions-panel h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 10px rgb(177, 20, 59);
+}
+
+#missionInput {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#missions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.mission {
+    display: flex;
+    align-items: center;
+    background: rgba(135, 25, 25, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    justify-content: space-between;
+}
+
+.mission input {
+    margin-right: 10px;
+}
+
+.mission label {
+    color: rgb(228, 228, 228);
+    font-size: 1rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+.mission input:checked + label {
+    text-decoration: line-through;
+    color: #55cc21;
+}
+
+.mission button {
+    background: rgb(249, 247, 247);
+    border: none;
+    color: white;
+    padding: 10px 1%;
+    border-radius: 0px;
+    cursor: no-drop;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    #timer-wrapper, #todo-list {
+        max-width: 100%;
+    }
+    button {
+        max-width: 100%;
+    }
+}
+
+/* Manter o timer rodando mesmo ao sair da página */
+.hidden-tab {
+    visibility: hidden;
+    position: absolute;
+}
